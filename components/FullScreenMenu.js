@@ -8,7 +8,7 @@ const FullScreenMenu = ({ isOpen, onClose }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 bg-black/95 z-50 flex flex-col justify-center items-center space-y-8"
+          className="fixed inset-0 bg-black/95 z-50 flex flex-col justify-center items-center space-y-8 cursor-pointer"
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
           exit={{ x: "100%" }}
@@ -45,23 +45,36 @@ const FullScreenMenu = ({ isOpen, onClose }) => {
             </svg>
           </button>
           <nav className="text-white text-8xl md:text-[7rem] space-y-9 md:space-y-10 text-center font-['Aalto'] flex flex-col">
-            <Link href="/">
+            <Link href="/work">
               <div>
                 <ScrambledText
-                  className="scrambled-text-demo"
+                  className=""
                   radius={100}
                   duration={1.2}
                   speed={0.5}
                   scrambleChars=".:"
                 >
-                  home
+                  work
+                </ScrambledText>
+              </div>
+            </Link>
+            <Link href="/programming-languages">
+              <div>
+                <ScrambledText
+                  className=""
+                  radius={100}
+                  duration={1.2}
+                  speed={0.5}
+                  scrambleChars=".:"
+                >
+                  languages
                 </ScrambledText>
               </div>
             </Link>
             <Link href="/about">
               <div>
                 <ScrambledText
-                  className="scrambled-text-demo"
+                  className=""
                   radius={100}
                   duration={1.2}
                   speed={0.5}
@@ -71,29 +84,16 @@ const FullScreenMenu = ({ isOpen, onClose }) => {
                 </ScrambledText>
               </div>
             </Link>
-            <Link href="#">
+            <Link href="/contact">
               <div>
                 <ScrambledText
-                  className="scrambled-text-demo"
+                  className=""
                   radius={100}
                   duration={1.2}
                   speed={0.5}
                   scrambleChars=".:"
                 >
-                  Work
-                </ScrambledText>
-              </div>
-            </Link>
-            <Link href="#">
-              <div>
-                <ScrambledText
-                  className="scrambled-text-demo"
-                  radius={100}
-                  duration={1.2}
-                  speed={0.5}
-                  scrambleChars=".:"
-                >
-                  Languages
+                  contact me
                 </ScrambledText>
               </div>
             </Link>

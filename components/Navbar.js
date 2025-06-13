@@ -9,18 +9,18 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <nav className="flex justify-between items-center px-4 sm:px-6 md:px-10 lg:px-16 py-4 z-50 relative">
+      <nav className="flex justify-between items-center px-4 sm:px-6 md:px-10 lg:px-16 py-6">
         <Link href="/">
           <FuzzyText
             fontFamily="Aalto"
-            fontSize="clamp(2.5rem, 6vw, 4.5rem)"
+            fontSize="clamp(2.8rem, 6vw, 4.5rem)"
             className="text-white"
           >
             Portfolio
           </FuzzyText>
         </Link>
 
-        <div onClick={() => setMenuOpen(true)} className="hover:cursor-pointer">
+        <div onClick={() => setMenuOpen(true)} className="">
           <svg
             width="40"
             height="40"

@@ -19,32 +19,37 @@
   }
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
 @font-face {
-  font-family: 'Mango';
-  src: url('/fonts/mango/MangoGrotesque.woff2') format('woff2'),
-       url('/fonts/mango/MangoGrotesque.woff') format('woff');
+  font-family: "Mango";
+  src: url("/fonts/mango/MangoGrotesque.woff2") format("woff2"),
+    url("/fonts/mango/MangoGrotesque.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Humane';
-  src: url('/fonts/humane/Humane-VF.woff') format('woff');
+  font-family: "Humane";
+  src: url("/fonts/humane/Humane-VF.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Aalto';
-  src: url('/fonts/aalto/aalto.woff') format('woff');
+  font-family: "Aalto";
+  src: url("/fonts/aalto/aalto.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+.dot-cursor {
+  width: 4rem;
+  height: 4rem;
+  z-index: 1;
+}

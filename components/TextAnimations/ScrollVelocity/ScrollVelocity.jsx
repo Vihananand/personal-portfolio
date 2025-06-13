@@ -68,7 +68,7 @@ export const ScrollVelocity = ({
       smoothVelocity,
       velocityMapping?.input || [0, 1000],
       velocityMapping?.output || [0, 5],
-      { clamp: false },
+      { clamp: false }
     );
 
     const copyRef = useRef(null);
@@ -108,7 +108,7 @@ export const ScrollVelocity = ({
           ref={i === 0 ? copyRef : null}
         >
           {children}
-        </span>,
+        </span>
       );
     }
 

@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import ClientWrapper from "@/components/ClientWrapper";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,16 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Vihan Anand",
-  description: "Explore the personal portfolio of Vihan Anand — a passionate full-stack developer crafting sleek, high-performance websites using Next.js, TailwindCSS, Framer Motion, and GSAP.",
+  description:
+    "Explore the personal portfolio of Vihan Anand — a passionate full-stack developer crafting sleek, high-performance websites using Next.js, TailwindCSS, Framer Motion, and GSAP.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased lg:cursor-none`}
       >
-        {children}
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );

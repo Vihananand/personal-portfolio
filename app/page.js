@@ -2,6 +2,7 @@
 
 import ScrollVelocity from "@/components/TextAnimations/ScrollVelocity/ScrollVelocity";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   
@@ -16,11 +17,12 @@ export default function Home() {
           <ScrollVelocity
             texts={["Vihan Anand", "Full Stack Web Developer"]}
             velocity={-100}
-            className="text-white font-thin text-6xl md:text-7xl lg:text-[6rem] xl:text-[8rem] font-['Aalto'] tracking-wider"
+            className="text-white font-thin text-8xl md:text-9xl lg:text-[8rem] font-['Aalto'] tracking-wider"
           />
         </div>
       </div>
-      <div className="min-h-screen w-full bg-black flex justify-center items-center font-['Aalto'] text-white text-[10rem]">content to be added....</div>
+      <div className="min-h-screen w-full bg-black flex pl-10 justify-center items-center font-['Aalto'] text-white text-[10rem]">content to be added....</div>
+      <Footer/>
     </>
   );
 }
