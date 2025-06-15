@@ -48,12 +48,6 @@ body::-webkit-scrollbar {
   font-display: swap;
 }
 
-.dot-cursor {
-  width: 4rem;
-  height: 4rem;
-  z-index: 1;
-}
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;

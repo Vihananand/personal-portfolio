@@ -3,6 +3,7 @@
 import ScrollVelocity from "@/components/TextAnimations/ScrollVelocity/ScrollVelocity";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MainContent from "@/components/mainContent";
 
 export default function Home() {
   
@@ -21,7 +22,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="min-h-screen w-full bg-black flex pl-10 justify-center items-center font-['Aalto'] text-white text-[10rem]">content to be added....</div>
+      <MainContent/>
       <Footer/>
     </>
   );

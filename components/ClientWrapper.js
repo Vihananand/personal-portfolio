@@ -12,7 +12,6 @@ export default function ClientWrapper({ children }) {
     <div className={showLoader ? "overflow-hidden" : ""}>
       <DotCursor />
       
-      {/* Intro screen that slides up */}
       <motion.div
         initial={{ y: 0, opacity: 1 }}
         animate={{ 
@@ -22,7 +21,7 @@ export default function ClientWrapper({ children }) {
         transition={{ 
           y: {
             duration: 1.5, 
-            ease: [0.33, 1, 0.68, 1], // Even smoother easing
+            ease: [0.33, 1, 0.68, 1],
             delay: showLoader ? 0 : 0.2
           },
           opacity: {
@@ -36,7 +35,6 @@ export default function ClientWrapper({ children }) {
         {showLoader && <IntroLoader onFinish={() => setShowLoader(false)} />}
       </motion.div>
       
-      {/* Homepage content - always in normal position */}
       <div className="min-h-screen">
         {children}
       </div>
