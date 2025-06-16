@@ -5,7 +5,7 @@ import { OrbitControls, useGLTF, Center } from "@react-three/drei";
 import { useRef } from "react";
 
 function Model() {
-  const { scene } = useGLTF("/models/neoGenesis/neoGenesis.glb");
+  const { scene } = useGLTF("/models/robot/robot.glb");
   const modelRef = useRef();
 
   useFrame((state, delta) => {
@@ -15,7 +15,7 @@ function Model() {
   });
 
   return (
-    <Center disableY scale={4}>
+    <Center disableY scale={2.5}>
       <primitive object={scene} ref={modelRef} />
     </Center>
   );

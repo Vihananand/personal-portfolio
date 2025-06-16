@@ -58,7 +58,7 @@ const FullScreenMenu = ({ isOpen, onClose }) => {
                 </ScrambledText>
               </div>
             </Link>
-            <Link href="/programming-languages">
+            <Link href="/projects">
               <div>
                 <ScrambledText
                   className=""
@@ -67,7 +67,7 @@ const FullScreenMenu = ({ isOpen, onClose }) => {
                   speed={0.5}
                   scrambleChars=".:"
                 >
-                  languages
+                  projects
                 </ScrambledText>
               </div>
             </Link>

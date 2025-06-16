@@ -173,11 +173,11 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="flex flex-wrap lg:flex-col justify-center items-center text-5xl font-['Aalto'] tracking-wider gap-2">
-          <Link href={"#"}>work</Link>
-          <Link href={"#"}>about</Link>
-          <Link href={"#"}>contact</Link>
-          <Link href={"#"}>Home</Link>
+        <div className="flex flex-wrap lg:flex-col justify-center items-center text-5xl font-['Aalto'] tracking-wider gap-6 lg:gap-3">
+          <Link href={"/work"}>work</Link>
+          <Link href={"/programming-languages"}>Languages</Link>
+          <Link href={"/about"}>about</Link>
+          <Link href={"/contact"}>contact</Link>
         </div>
       </div>
 

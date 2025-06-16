@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-
 import { usePathname } from "next/navigation";
 
 export default function DotCursor() {
@@ -11,24 +10,22 @@ export default function DotCursor() {
     const dot = document.querySelector("[data-dot-cursor]");
     if (!dot) return;
 
-    const move = (e) => {
-      dot.style.left = `${e.clientX}px`;
-      dot.style.top = `${e.clientY}px`;
+    const move = ({ clientX: x, clientY: y }) => {
+      dot.style.left = `${x}px`;
+      dot.style.top = `${y}px`;
     };
 
-    const handleHoverIn = () => {
-      dot.style.transform = "translate(-50%, -50%) scale(1.5)";
-    };
+    const scaleDot = (scale) =>
+      (dot.style.transform = `translate(-50%, -50%) scale(${scale})`);
 
-    const handleHoverOut = () => {
-      dot.style.transform = "translate(-50%, -50%) scale(1)";
-    };
-
-    window.addEventListener("mousemove", move);
+    const handleHoverIn = () => scaleDot(1.5);
+    const handleHoverOut = () => scaleDot(1);
 
     const hoverTargets = document.querySelectorAll(
       "a, button, [role='button'], svg"
     );
+
+    window.addEventListener("mousemove", move);
     hoverTargets.forEach((el) => {
       el.addEventListener("mouseenter", handleHoverIn);
       el.addEventListener("mouseleave", handleHoverOut);
@@ -46,7 +43,7 @@ export default function DotCursor() {
   return (
     <div
       data-dot-cursor
-      className="w-16 h-16 fixed left-0 top-0 rounded-full bg-white mix-blend-difference pointer-events-none z-50 transition-transform duration-300 ease-out hidden lg:block"
+      className="w-12 h-12 fixed left-0 top-0 rounded-full bg-white mix-blend-difference pointer-events-none z-50 transition-transform duration-300 ease-out hidden lg:block"
       style={{ transform: "translate(-50%, -50%) scale(1)" }}
     />
   );
