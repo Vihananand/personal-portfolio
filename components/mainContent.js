@@ -31,7 +31,6 @@ export default function MainContent() {
             <ambientLight intensity={2} />
             <directionalLight position={[20, 20, -5]} intensity={4} />
             <Model />
-            <OrbitControls enableZoom={false} enablePan={false} />
           </Canvas>
         </div>
       </div>
@@ -39,7 +38,7 @@ export default function MainContent() {
       {/* Text Section */}
       <div className="w-full lg:w-1/2 h-1/2 lg:h-full p-6 lg:p-10 flex items-center justify-center bg-black">
         <p className="text-3xl lg:text-6xl text-white tracking-wider text-center lg:text-left leading-snug">
-          I&apos;m Not a Three.js guru, but fluent enough to make your 3D models look alive and not like they&apos;re stuck in 2005. Kinda essential if your site’s aiming for that “wow” instead of “meh.”
+          I&apos;m Not a Three.js guru—but fluent enough to make your 3D pop like it’s 2025, not stuck in 2005. If your site wants ‘wow’ and not ‘meh’ look, you need that.
         </p>
       </div>
     </div>

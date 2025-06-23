@@ -16,7 +16,7 @@ export default function Home() {
         {/* Scroll Text */}
         <div className="pb-20 sm:pb-0 md:pb-0">
           <ScrollVelocity
-            texts={["Vihan Anand", "Full Stack Web Developer"]}
+            texts={["Vihan Anand ·", "Code. Deploy. Repeat. — Full Stack ·"]}
             velocity={-100}
             className="text-white font-thin text-8xl md:text-9xl lg:text-[8rem] font-['Aalto'] tracking-wider"
           />
